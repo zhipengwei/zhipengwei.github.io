@@ -67,7 +67,7 @@
         <h3><a href="#Me">About Me</a></h3>
 	<p align="justify">
 	I am currently a master student at the <a href="http://acs.ict.ac.cn/">
-	Center for Advanced Computer System</a> of <a href="http://english.ict.cas.cn/">Institute of Computing Technology and Science</a> at 
+	Center for Advanced Computer System</a>, <a href="http://english.ict.cas.cn/">Institute of Computing Technology and Science</a>,  
 	<a href="http://english.ucas.ac.cn/Pages/default.aspx">University of Chinese Academy of Sciences</a>
 	</a>.
 	With my advisor <a href="http://asg.ict.ac.cn/cmy/?page_id=12">Mingyu Chen</a>, I
@@ -75,7 +75,7 @@
 	</p>
 
 	<p align="justify">
-	Prior to ICT, I received my bachelor's degree from <a href="http://cs.hust.edu.cn/index/en">School of Computer Science & Technology</a> at <a href="http://english.hust.edu.cn/">Huazhong University of Science and Technology</a> in 2012.
+	I received my bachelor's degree from <a href="http://cs.hust.edu.cn/index/en">School of Computer Science & Technology</a>, <a href="http://english.hust.edu.cn/">Huazhong University of Science and Technology</a> in 2012.
 	</p>
   
       </article>
@@ -100,22 +100,21 @@
 	<li><p>
 	<strong>Evaluation of cache set balance on Nehalem and Sandy Bridge processors</strong>.<br>
 	<p align="justify">
-Firstly, I developed the function based on <a href="http://asg.ict.ac.cn/hmtt/">HMTT</a> that could record the reference time of all cache sets during the whole execution
-period of one program; Evaluated the cache set balance on Nehalem and found that different cache sets can experience very different levels of
-demand, and even a exact set can experience different level of command during the period of execution;
+Based on <a href="http://asg.ict.ac.cn/hmtt/">HMTT</a>, I develop the function that could record the reference time of all cache sets during the whole execution
+period of one program; Then I evaluated the cache set balance on Nehalem and found that different cache sets experienced very different levels of
+demand, and even a exact set experienced different level of command during the period of execution;
 As a comparison, I want to evaluate cache set balance on Sandy Bridge processor. Because of the hash function by which all physical addresses are 
-distributed across all cache slices, I am not able to get set addresses directly from the physical addresses. So I used statistical methods to try to crack the hash function.
+distributed across all cache slices, I am not able to get set addresses directly from the physical addresses. So I use statistical methods to crack the hash function.
 	</p></p></li>
 
 	<h4>03/2013 - 10/2013</h4>      
 	<li><p>
 	<strong>KSM Optimization based on HMTT.</strong>.<br>
 	<p align="justify">
-Based on the memory reference traces collected using HMTT, a few characteristics can be extracted. Furthermore,
-all the physical pages can be classified into different categories based on these characteristics. And unlike the current
-implementation that only two global red black trees are constructed in KSM, one tree is contructed to hold the pages in
-each catogary. As a result, the candidate page only need to be compared with the page category that shares the same
-characteristics with itself rather than compared with all physical pages. As a result, futile page comparisions are reduced by 68.5%.
+Based on the memory reference traces collected using HMTT, all physical pages were classified into different categories based on the reference characteristics of 
+the pages. Unlike the current implementation that only two global red black trees are constructed in KSM, one tree is contructed for the pages in
+each category. In order to find chance of page merging, the candidate page only needs to be compared with the pages that shares the same
+reference characteristics rather than compared with all physical pages. In this way, futile page comparisons are reduced by 68.5%.
 	</p>
 	</p></li>
 
@@ -123,9 +122,8 @@ characteristics with itself rather than compared with all physical pages. As a r
 	<li><p>
 	<strong>Implementation of the improved version of HMTT.</strong>.<br>
 	<p align="justify">
-I implement the improved version that can collect traces from two memory channels. My major work is that I implemented the mechanism that synchronizes the time stamps of the 
-memory reference traces from two memory channels. Besides, I implement the toolkit that decodes the trace and the driver that serves as 
-the control interface of the tool; 
+I implemented the improved version that can collect traces from two memory channels. The main duties were to implemented the mechanism that synchronized the time stamps of the 
+memory reference traces from two memory channels and to implement the function that encapsulated data into transaction layer packets.
 	</p>
 	</p></li>
 	
@@ -133,7 +131,7 @@ the control interface of the tool;
 	<li><p>
 	<strong>Optimization of Breadth First Search based on FPGA.</strong>.<br>
 	<p align="justify">
-I design a hierarchical data structure which is adaptive to vector size and sparsity to store sparse vector.
+I designed a hierarchical data structure which was adaptive to vector size and sparsity to store sparse vector.
 <!--And then baImplementation of breadth first search based on this data structure can reduce memory access and and operation by 20%; -->
 	</p>
 	</p></li>
@@ -142,9 +140,9 @@ I design a hierarchical data structure which is adaptive to vector size and spar
 	<li><p>
 	<strong>Smartmontools development.</strong>.<br>
 	<p align="justify">
-I study about the mechamism of <a href="http://www.smartmontools.org/">Smartmontools</a>;
-After being familiar with organizaiton of the project, I seperate the function of 
-disk tesking from the whole package to form an independent light-weighted disk testing tool.
+I studied the mechanism of <a href="http://www.smartmontools.org/">Smartmontools</a>;
+After having been familiar with organization of the project, I separate the function of 
+disk testing from the whole package to form an independent light-weighted disk testing tool.
 	</p>
 	</p></li>
 		
