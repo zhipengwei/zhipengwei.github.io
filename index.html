@@ -42,11 +42,8 @@
   <div class="row">
     <div class="twelve columns">
       <ul class="nav-bar">
-        <li><a href="#Me">About Me</a></li>
-        <li><a href="#Publication">Publication</a></li>
-		<li><a href="#Research Experiences">Research Experiences</a></li>
-        <li><a href="#Honors and Awards">Honors and Awards</a></li>
-		<li><a href="papers/cv.pdf">CV</a></li>
+        <li><a href="#Me">CSC501 exam</a></li>
+
       </ul>
 
       <h1>Zhipeng Wei
@@ -63,90 +60,14 @@
     <!-- Main Blog Content -->
     <div class="nine columns" role="content">
 
-      <article id="Me">
-        <h3><a href="#Me">About Me</a></h3>
-	<p align="justify">
-	I am currently a master student at the <a href="http://acs.ict.ac.cn/">
-	Center for Advanced Computer System</a>, <a href="http://english.ict.cas.cn/">Institute of Computing Technology and Science</a>,  
-	<a href="http://english.ucas.ac.cn/Pages/default.aspx">University of Chinese Academy of Sciences</a>
-	</a>.
-	With my advisor <a href="http://asg.ict.ac.cn/cmy/?page_id=12">Mingyu Chen</a>, I
-	work on computer architecture.
-	</p>
 
-	<p align="justify">
-	I received my bachelor's degree from <a href="http://cs.hust.edu.cn/index/en">School of Computer Science and Technology</a>, <a href="http://english.hust.edu.cn/">Huazhong University of Science and Technology</a> in 2012.
-	</p>
-  
-      </article>
 
       <hr>     
  
-<article id="Publication">
-    <h3><a href="#Publication">Publication</a></h3>
-		<li><p>
-		<strong>CMD: Classification-based Memory Deduplication through Page Access Characteristics.</strong>.<br>
-		[<a href="papers/cmd.pdf">PDF</a>] <br>
-		Licheng Chen, <strong>Zhipeng Wei</strong>, Zehan Cui, Mingyu Chen, Haiyang Pan, Yungang Bao.<br>
-		Proceedings of the International Conference on Virtual Execution Environments, 2014
-		</p></li>
-</article>
+
 
       <hr>
       
-<article id="Research Experiences">
-      	<h3><a href="#Research Experiences">Research Experiences</a></h3>
-    <h4>01/2014 - Present</h4>      
-	<li><p>
-	<strong>Evaluation of cache set balance on Nehalem and Sandy Bridge processors</strong>.<br>
-	<p align="justify">
-I enable <a href="http://asg.ict.ac.cn/hmtt/">HMTT</a> to record the reference time of all cache sets during program execution;
-Then I evaluated the cache set balance on Nehalem and found that different cache sets experienced very different levels of
-demand, and even an exact set experienced different level of command during program execution. Unawareness of the hash function on Sandy Bridge processors by which all physical addresses are 
-distributed across all cache slices prevented me from getting set address directly from the physical address. So I use statistical methods to crack the hash function.
-	</p></p></li>
-
-	<h4>03/2013 - 10/2013</h4>      
-	<li><p>
-	<strong>KSM Optimization based on HMTT.</strong>.<br>
-	<p align="justify">
-Based on the memory reference traces collected using HMTT, all physical pages were classified into different categories based on the reference characteristics of 
-the pages. Unlike the current implementation that only two global red black trees are constructed in KSM, one tree is constructed for the pages in
-each category. In order to find chance of page merging, the candidate page only needs to be compared with the pages that share the same
-reference characteristics rather than compared with all physical pages. In this way, futile page comparisons are reduced by 68.5%.
-	</p>
-	</p></li>
-
-	<h4>03/2014 - 06/2014</h4>      
-	<li><p>
-	<strong>Implementation of the improved version of HMTT.</strong>.<br>
-	<p align="justify">
-I implemented the improved version that can collect traces from two memory channels. The main duties were to implement the mechanism that synchronized the time stamps of the 
-memory reference traces of two memory channels and to implement the function that encapsulated data into transaction layer packets.
-	</p>
-	</p></li>
-	
-	<h4>03/2012 - 05/2012</h4>      
-	<li><p>
-	<strong>Optimization of Breadth First Search based on FPGA.</strong>.<br>
-	<p align="justify">
-I designed a hierarchical data structure which was adaptive to vector size and sparsity to store sparse vector.
-<!--And then baImplementation of breadth first search based on this data structure can reduce memory access and and operation by 20%; -->
-	</p>
-	</p></li>
-	
-	<h4>07/2011 - 09/2011</h4>      
-	<li><p>
-	<strong>Smartmontools development.</strong>.<br>
-	<p align="justify">
-I studied the mechanism of <a href="http://www.smartmontools.org/">Smartmontools</a>;
-After having been familiar with the organization of the project, I separated the function of 
-disk testing from the whole package to form an independent light-weighted disk testing tool.
-	</p>
-	</p></li>
-		
-</article>
-       
 	<hr>
    
 
